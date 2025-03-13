@@ -14,6 +14,7 @@ h1 {
 }
 
 main img {
+    margin-left: 0.75rem;
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -22,17 +23,29 @@ main img {
 }
 
 p {
-    padding: 0;
+    margin-bottom: .5rem;
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem 1rem .5rem 1rem;
     background-color: #eee;
     color: #333;
-    text-align:center;
+    text-align: center;
+}
+
+aside h2 {
+    background-color: rgb(255, 165, 0);
+    border: 1px solid rgb(255, 125, 0);
+    color: #333;
+}
+
+aside p {
+    padding: .125rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgb(228, 228, 228);
 }
 
 aside img {
