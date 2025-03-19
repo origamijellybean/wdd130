@@ -5,25 +5,31 @@
     --blkborder: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-main {
-    max-width: 100%;
-}
 
 nav {
     background-color: var(--dblue);
-    padding: 10px;
+    padding: 15px 0 15px 20px;
 }
-
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
+}
+
+p {
+    padding: 0;
 }
 
 h1 {
     color: var(--dblue);
 }
 
+main {
+    max-width: 100%;
+}
+main p{
+    margin-top: 1.5rem;
+}
 main img {
     margin-left: 0.75rem;
     width: 150px;
@@ -33,9 +39,25 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 0;
+
+ul{
+    padding-left: 0;
+    border-top: 1px var(--sblack);
+    border-bottom: 1px var(--sblack);
+    padding-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
+ul h2 {
+    color: var(--dblue);
+    padding-left: 1rem;
+}
+ul li{
+    list-style-position: inside;
+    padding-bottom: .25rem;
+    padding-left: 1.75rem;
+}
+
 
 aside {
     width: 20rem;
@@ -46,26 +68,24 @@ aside {
     color: var(--chargray);
     text-align: center;
 }
-
 aside h2 {
     background-color: rgb(255, 165, 0);
     border: 1px solid rgb(255, 125, 0);
     color: var(--chargray);
 }
-
 aside p {
     padding: .125rem;
     border: var(--blkborder);
     background-color: rgb(228, 228, 228);
 }
-
 aside img {
     width: 200px;
     height: auto;
 }
 
+
 footer {
-    margin-top: 15px;
+    margin-top: 1.75rem;
     border-top: 1px var(--sblack);
     text-align: center;
 }
