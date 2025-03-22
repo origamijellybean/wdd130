@@ -130,6 +130,14 @@ article img {
     text-align: center;
 }
 
+#adventure-awaits p {
+    margin-top: 0px;
+    padding-top: 0;
+}
+#adventure-awaits img{
+    width: 500px;
+    padding: 15px 0 0 0;
+}
 footer {
     border-top: 2px solid var(--accent1-color);
     text-align: center;
