@@ -87,7 +87,7 @@ div h1 {
     width: 600px;
     text-align: center;
     position: absolute;
-    top: 250px;
+    top: 0px;
     left: 50%;
     translate: -50%;
     padding: 10px 0px;
@@ -97,7 +97,7 @@ div h1 {
 article {
     position: absolute;
     width: 600px;
-    top: 540px;
+    top: 280px;
     left: 50%;
     translate: -50%;
     background-color: var(--accent1-color);
@@ -140,8 +140,7 @@ footer a {
     text-decoration: none;
 }
 #copywrite {
-    margin-top: 8px;
-    font-size: 80%;
-    color: var(--accent2-color);
+    margin-top: 12px;
+    color: var(white);
 }
 
