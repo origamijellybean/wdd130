@@ -27,7 +27,7 @@ p,
 img,
 figcaption {
     font-family: "roboto condensed", regular;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: white;
     text-align: center;
     text-decoration: none;
@@ -190,7 +190,6 @@ article img {
 
 footer {
     border-top: 2px solid var(--accent1-color);
-    padding-right: 30px;
     margin-top: 10px;
     display: grid;
     grid-template-columns: minmax(150px, 25%) minmax(300px, 50%) minmax(150px, 25%);
@@ -202,7 +201,7 @@ footer {
     grid-row: 1/2;
     align-self: center;
 }
-footer ul {
+footer div {
     grid-column: 3/4;
     grid-row: 1/2;
     text-align: center;
