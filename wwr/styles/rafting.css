@@ -46,7 +46,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: minmax(30px, 5%) minmax(190px, 31.67%) minmax(380px, 63.33%);
+    grid-template-columns: minmax(60px, 10%) minmax(180px, 30%) minmax(360px, 60%);
     height: 200px;
     align-items: center;
     justify-content: center;
