@@ -136,8 +136,8 @@ article p {
 }
 article img {
     flex: 1;
-    height: calc(113px/114px*100px);
-    width: 100px;
+    height: auto;
+    width: auto;
     box-sizing: border-box;
     border: 5px solid var(--primary-color);
 }
