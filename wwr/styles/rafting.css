@@ -130,12 +130,12 @@ article {
     background: var(--accent1-color);
 }
 article p {
-    flex: 6;
+    flex: 90%;
     text-align: justify;
     padding: 3px 5px 3px 4px;
 }
 article img {
-    flex: 1;
+    flex: 10%;
     aspect-ratio: initial;
     height: auto;
     width: auto;
@@ -155,7 +155,7 @@ article img {
 #history img {
     aspect-ratio: 11/9;
     min-width:137px; 
-    /* object-fit: cover; */
+    object-fit: cover;
     flex: 20%;
     padding: 0 10px;
 }
