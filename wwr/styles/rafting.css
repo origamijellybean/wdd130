@@ -136,6 +136,7 @@ article p {
 }
 article img {
     flex: 1;
+    aspect-ratio: initial;
     height: auto;
     width: auto;
     box-sizing: border-box;
