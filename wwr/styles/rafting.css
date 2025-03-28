@@ -77,8 +77,8 @@ nav a{
     background: var(--secondary-color);
     color: white;
     padding: 1px 15px;
-    border-top: 3px solid var(--accent2-color);
-    border-bottom: 3px solid var(--accent2-color);
+    border-top: 1px solid var(--accent2-color);
+    border-bottom: 1px solid var(--accent2-color);
     border-left: 1px solid var(--accent2-color);
     border-right: 1px solid var(--accent2-color);
 }
@@ -92,6 +92,10 @@ main {
     margin-right: auto;
 }
 
+main div .hero{
+    box-sizing: border-box;
+    border: 2px solid var(--secondary-color);
+}
 
 .hero {
     display: grid;
@@ -137,9 +141,10 @@ article p {
 article img {
     flex: 10%;
     aspect-ratio: initial;
-    height: auto;
+    height: 75px;
     width: auto;
     box-sizing: border-box;
+    align-self: center;
     border: 5px solid var(--primary-color);
 }
 
@@ -157,13 +162,15 @@ article img {
     min-width:137px; 
     object-fit: cover;
     flex: 20%;
-    padding: 0 10px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    border: 2px solid var(--secondary-color);
 }
 #history p {
     text-align: justify;
     flex: 40%;
     margin: 0;
-    padding-top: 5px;
+    padding: 5px;
 }
 
 
@@ -181,7 +188,9 @@ article img {
 #adventure-awaits img {
     order: -1;
     width: 100%;
-    padding: 15px 0 0 0;
+    margin: 15px 0 0 0;
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-color);
 }
 
 #adventure-awaits figure {
