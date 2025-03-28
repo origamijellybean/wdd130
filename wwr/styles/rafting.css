@@ -57,10 +57,6 @@ header img {
     margin-right: auto;
 }
 
-#adventure-awaits img{
-    width: 100%;
-    padding: 15px 0 0 0;
-}
 
 nav{
     display: flex;
@@ -76,7 +72,7 @@ nav a{
     border-bottom: 3px solid var(--accent1-color);
     border-left: 1px solid var(--accent1-color);
     border-right: 1px solid var(--accent1-color);
-;}
+}
 
 main {
     display: grid;
@@ -87,15 +83,9 @@ main {
     margin-right: auto;
 }
 
-.hero {
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    justify-self: center;
-}
 
 
-.main div img {
+main div img {
     height: 400px;
     width: 600px;
 }
@@ -120,6 +110,14 @@ main div div {
     align-self: end;
     margin-bottom: 15px;
 }
+
+.hero {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+}
+
 
 article {
     display: flex;
@@ -176,7 +174,10 @@ article img {
 }
 #adventure-awaits img {
     order: -1;
+    width: 100%;
+    padding: 15px 0 0 0;
 }
+
 #adventure-awaits figure {
     text-align: center;
     height: min-content;
