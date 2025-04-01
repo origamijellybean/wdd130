@@ -38,8 +38,8 @@ figcaption {
 body {
     background-color: var(--primary-color);
     display: grid;
-
-    grid-template-columns: minmax(600px, 100%);
+    grid-template-columns: 100%;
+    /* grid-template-columns: minmax(600px, 100%); */
     grid-template-rows: 200px auto 100px;
     row-gap: 25px;
 }
@@ -73,8 +73,7 @@ nav{
     grid-row: 1/2;
 }
 nav a{
-    /* background: radial-gradient(circle, var(--secondary-color) 70%, var(--accent2-color)); */
-    background: var(--secondary-color);
+    background: radial-gradient(circle, var(--secondary-color) 70%, var(--accent2-color));
     color: white;
     padding: 1px 15px;
     border-top: 1px solid var(--accent2-color);
@@ -86,7 +85,7 @@ nav a{
 main {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 400px min-content min-content;
+    grid-template-rows: min-content min-content min-content;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -95,6 +94,8 @@ main {
 main div .hero{
     box-sizing: border-box;
     border: 2px solid var(--secondary-color);
+    object-fit: cover;
+    
 }
 
 .hero {
@@ -104,13 +105,14 @@ main div .hero{
     justify-self: center;
 }
 div .hero img {
-    height: 400px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 main div h1 {
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 600px;
+    width: 100%;
     opacity: 90%;
     height: min-content;
     padding: 8px 0;
@@ -121,7 +123,7 @@ main div div {
     grid-row: 1/2;
     text-align: end;
     justify-self: center;
-    width: 600px;
+    width: 100%;
     height: min-content;
     align-self: end;
     margin-bottom: 15px;
@@ -134,14 +136,15 @@ article {
     background: var(--accent1-color);
 }
 article p {
-    flex: 90%;
+    /* flex: 90%; */
     text-align: justify;
     padding: 3px 5px 3px 4px;
 }
 article img {
-    flex: 10%;
+    /* flex: 10% */
     aspect-ratio: initial;
     height: 75px;
+    margin: 2px 0;
     width: auto;
     box-sizing: border-box;
     align-self: center;
