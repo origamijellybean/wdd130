@@ -208,19 +208,21 @@ article img {
 footer {
     border-top: 2px solid var(--accent1-color);
     margin-top: 10px;
+    padding: 4px;
     display: grid;
     grid-template-columns: minmax(150px, 25%) minmax(300px, 50%) minmax(150px, 25%);
+    grid-template-rows: 45px 45px;
 }
 
 #copywrite {
     text-align: center;
     grid-column: 2/3;
     grid-row: 1/2;
-    align-self: center;
+    align-self: bottom;
 }
 footer div {
     grid-column: 3/4;
-    grid-row: 1/2;
+    grid-row: 1/3;
     text-align: center;
     align-self: center;
     padding: 0;
@@ -229,3 +231,12 @@ footer a {
     padding: 3px;
 }
 
+footer a[id="wireframe"] {
+    font-size: 15px;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: top;
+    text-decoration: underline;
+    color: var(--accent2-color);
+}
