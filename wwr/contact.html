@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-<body>
-    <header>
+<body class="contact">
+    <header class="contact">
         <img src="images/white-water-rapids.jpg" alt="White water rapids" width="200">
         <nav>
             <a href="index.html">Home</a>
@@ -27,22 +27,115 @@
         </nav>
     </header>
     <main>
-
+        <h1>Contact Page</h1>
+        <div class="contact">
+            <p class="contact">Email:</p>
+            <p>whitewaterrafting@adventure.com</p>
+            <!-- <p class="padding"></p> -->
+            <p class="contact">Phone Numbers:</p>
+            <p class="phone">Reservations/Tours</p>
+            <p class="pnumber">(WWR) BOOK-NOW</p>
+            <p class="phone">Finance</p>
+            <p class="pnumber">(WWR) FIN-ANCE</p>
+            <p class="phone">Support</p>
+            <p class="pnumber">(WWR) SUP-PORT</p>
+            <p>(All numbers toll-free)</p>
+            <!-- <p class="padding"></p>  -->
+            <p class="contact">Company Address:</p>
+            <p>111 West Snake River, American Falls, Idaho</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12586.916125882954!2d-112.88923566348062!3d42.78036042284562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aaafc689376c15%3A0xb7bb462f5337299!2sAmerican%20Falls%2C%20ID%2083211!5e0!3m2!1sen!2sus!4v1743707674117!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2>Meet our Executives</h2>
+        <div class="employees">
+            <figure>
+                <img src="images/happy-rafting-guide.jpg" alt="Napoli happily rafting">
+                <figcaption>Napoli Dynomight
+                    <div class="subcaption">Personnel Manager</div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/profile.webp" alt="Tyson smiling">
+                <figcaption>Tyson Hunt
+                    <div class="subcaption">Head Manager</div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/ronald.webp" alt="Ronald scanning stuff">
+                <figcaption>Ronald Trumpet
+                    <div class="subcaption">Equipment Manager</div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/donald.jpg" alt="Donald with his handy hard hat">
+                <figcaption>Donald Raeggan
+                    <div class="subcaption">Head of Support & Safety</div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/dwayne.jpeg" alt="Dwayne at desk">
+                <figcaption>Dwayne "The Pebble" Jones
+                    <div class="subcaption">Tour Organizer</div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/james.jpg" alt="James smiling in a meeting">
+                <figcaption>James Dasner
+                    <div class="subcaption">Head of Finance</div>
+                </figcaption>
+            </figure>
+        </div>
+        <h2>Reach Out</h2>
+        <div class="feedback">
+            <form>
+                <p>Have questions or suggestions?</p>
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <div class="form-item column1">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-item column1">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Message Details</legend>
+                    <div class="form-item column2">
+                        <label for="reason">Contacting Reason:</label>
+                        <select id="reason" name="reason">
+                            <option value="inquiry">General Inquiry</option>
+                            <option value="question">Reservation Question</option>
+                            <option value="suggestion">Website Suggestion</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type message here"></textarea>
+                    </div>
+                </fieldset>
+                <div class="form-item column3">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p id="copywrite">&copy; 2025 🛶 White Water Rafting 🛶 Tyson Hunter</p>
         <a id="wireframe" href="https://app.moqups.com/E4ZG5EltSnC3DQ2TjPZP6UEaDjntJfZU/view/page/ad64222d5">Contact Us Wireframe</a>
         <div>
-        <a href="https://www.facebook.com">
-            <img src="images/facebook-logo.png" alt="Facebook" width="40">
-        </a>
-        <a href="https://www.x.com">
-            <img src="images/x-logo.png" alt="X" width="40">
-        </a>
-        <a href="https://www.instagram.com">
-            <img src="images/instagram-logo.png" alt="Instagram" width="40">
-        </a>
-    </div>
+            <a href="https://www.facebook.com">
+                <img src="images/facebook-logo.png" alt="Facebook" width="40">
+            </a>
+            <a href="https://www.x.com">
+                <img src="images/x-logo.png" alt="X" width="40">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instagram-logo.png" alt="Instagram" width="40">
+            </a>
+        </div>
     </footer>
 </body>
 

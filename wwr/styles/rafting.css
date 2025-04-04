@@ -26,7 +26,10 @@ h2 {
 a,
 p,
 img,
-figcaption {
+figcaption,
+legend,
+label,
+button {
     font-family: "roboto condensed", regular;
     background: var(--primary-color);
     color: white;
@@ -82,13 +85,14 @@ nav a{
     border-right: 1px solid var(--accent2-color);
 }
 
-main {
+main[class="about"] {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: min-content min-content min-content;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 main div .hero{
@@ -138,12 +142,10 @@ article {
     background: var(--accent1-color);
 }
 article p {
-    /* flex: 90%; */
     text-align: justify;
     padding: 3px 5px 3px 4px;
 }
 article img {
-    /* flex: 10% */
     aspect-ratio: initial;
     height: 75px;
     margin: 2px 0;
@@ -152,6 +154,7 @@ article img {
     align-self: center;
     border: 5px solid var(--primary-color);
 }
+
 
 
 #history {
@@ -205,20 +208,21 @@ article img {
     margin: 0px;
 }
 
+
+
 footer {
     border-top: 2px solid var(--accent1-color);
     margin-top: 10px;
     padding: 4px;
     display: grid;
     grid-template-columns: minmax(150px, 25%) minmax(300px, 50%) minmax(150px, 25%);
-    grid-template-rows: 45px 45px;
+    grid-template-rows: min-content;
 }
 
 #copywrite {
     text-align: center;
     grid-column: 2/3;
     grid-row: 1/2;
-    align-self: bottom;
 }
 footer div {
     grid-column: 3/4;
@@ -231,12 +235,170 @@ footer a {
     padding: 3px;
 }
 
+
+
 footer a[id="wireframe"] {
     font-size: 15px;
     text-align: center;
     grid-column: 2/3;
     grid-row: 2/3;
-    align-self: top;
     text-decoration: underline;
     color: var(--accent2-color);
+    padding-bottom: 10px;
+}
+
+main div[class="employees"] {
+    border-bottom: 2px solid var(--accent2-color);
+
+}
+
+div[class="employees"] h2{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-bottom: 20px;
+}
+
+main div[class="employees"]{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+
+main div[class="employees"] img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.subcaption, main div[class="employees"] figcaption{
+    width: 200px;
+    text-align: center;
+    justify-self: center;
+}
+
+main div[class="employees"] figure{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.feedback {
+    margin: 30px 0;
+}
+form {
+    width: 400px;
+    justify-self: center;
+    text-align: center;
+    background: var(--primary-color);
+    border: 3px solid var(--accent2-color);
+    border-radius: 10px;
+    padding: 0 15px 10px 15px;
+}
+form p {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 5px;
+    background: radial-gradient(circle, var(--secondary-color) 80%, var(--accent2-color));
+}
+legend {
+    color: var(--accent2-color);
+    text-align: left;
+}
+fieldset {
+    border: 2px solid var(--accent2-color);
+    margin: 2px 0;
+}
+.form-item {
+    display: grid;
+}
+div[class="form-item column1"] {
+    grid-template-columns: 1fr 2fr;
+    padding: 2px;
+}
+div[class="form-item column2"] {
+    grid-template-columns: 3fr 1fr;
+}
+label {
+    text-align: right;
+    padding-right: 5px;
+}
+label[for="message"] {
+    padding-top: 12px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+div[class="form-item column3"] {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+textarea {
+    padding: 1px;
+    padding-left: 2px;
+}
+input {
+    padding: 1px;
+}
+button {
+    background: var(--secondary-color);
+    color: white;
+    margin-top: 5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+button:hover {
+    background: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+body[class="contact"] {
+    grid-gap: 0;
+    min-width: 600px;
+}
+
+main div[class="contact"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+p[class="contact"], p:nth-child(2), p:nth-child(10), p:nth-child(12), iframe {  
+    grid-column: 1/3;
+    justify-self: center;
+    text-align: center;
+}
+.phone {
+    padding-left: 35%;
+    font-size: 16px;
+    grid-column: 1/2;
+}
+
+.pnumber {
+    padding-right: 35%;
+    font-size: 14px;
+    grid-column: 2/3;
+}
+
+.padding {
+    height: 0;
+}
+
+p[class="contact"] {
+    color: white;
+    padding: 1px 35px;
+    background: var(--secondary-color);
+    font-size: 20px;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+iframe {
+    border: 6px ridge var(--accent2-color);
+    margin: 10px;
 }
