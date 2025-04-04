@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: quicksand, bold;
+    font-family: quicksand, 'Trebuchet MS', bold;
     background: radial-gradient(circle, var(--secondary-color) 60%, var(--accent2-color));
     /* background: var(--secondary-color); */
     color: white;
@@ -30,7 +30,7 @@ figcaption,
 legend,
 label,
 button {
-    font-family: "roboto condensed", regular;
+    font-family: "roboto condensed", "Arial", regular;
     background: var(--primary-color);
     color: white;
     text-align: center;
