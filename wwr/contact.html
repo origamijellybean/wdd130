@@ -87,7 +87,7 @@
         <h2>Reach Out</h2>
         <div class="feedback">
             <form>
-                <p>Have questions or suggestions?</p>
+                <p id="questorsuggest">Have questions or suggestions?</p>
                 <fieldset>
                     <legend>Contact Info</legend>
                     <div class="form-item column1">
@@ -102,12 +102,13 @@
                 <fieldset>
                     <legend>Message Details</legend>
                     <div class="form-item column2">
-                        <label for="reason">Contacting Reason:</label>
-                        <select id="reason" name="reason">
-                            <option value="inquiry">General Inquiry</option>
-                            <option value="question">Reservation Question</option>
-                            <option value="suggestion">Website Suggestion</option>
-                        </select>
+                        <p id="contactreason">Contacting Reason:</p>
+                        <label for="inquiry">General Inquiry</label>
+                        <input type="radio" id="inquiry" name="reason" value="inquiry">
+                        <label for="question">Reservation Question</label>
+                        <input type="radio" id="question" name="reason" value="question">
+                        <label for="suggestion">Website Suggestion</label>
+                        <input type="radio" id="suggestion" name="reason" value="suggestion">
                     </div>
                     <div class="form-item">
                         <label for="message">Message:</label>
