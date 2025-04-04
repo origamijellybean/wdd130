@@ -243,8 +243,11 @@ footer a[id="wireframe"] {
     grid-column: 2/3;
     grid-row: 2/3;
     text-decoration: underline;
-    color: var(--accent2-color);
-    padding-bottom: 10px;
+    background-color: var(--secondary-color);
+    margin-bottom: 10px;
+    padding: 5px 0;
+    width: 150px;
+    margin: auto;
 }
 
 main div[class="employees"] {
@@ -306,12 +309,14 @@ form p {
     background: radial-gradient(circle, var(--secondary-color) 80%, var(--accent2-color));
 }
 legend {
-    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+    padding: 2px 5px 2px 5px;
     text-align: left;
 }
 fieldset {
     border: 2px solid var(--accent2-color);
-    margin: 2px 0;
+    border-radius: 5px;
+    margin: 4px 0;
 }
 .form-item {
     display: grid;
