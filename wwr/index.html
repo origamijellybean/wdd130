@@ -33,38 +33,73 @@
             <h2>Where nature and adventure meet</h2>
         </div>
         <!-- full-width hero image with heading message -->
-        <section id="adventure-awaits">
-            <h2>Adventure Awaits You</h2>
+        <section id="offerings">
+            <h2>We hope to offer you a great vacation, whatever your needs!</h2>
             <figure>
             <img src="images/raft-calm-spot.jpg" alt="Raft on Calm Waters">
-            <figcaption>The Stroll</figcaption>
+            <figcaption>Variety of Activities</figcaption>
             </figure>
             <figure>
-            <img src="images/raft-above-cliff.webp" alt="Raft Near a Rapid">
-            <figcaption>Sky-High</figcaption>
+            <img src="images/gear.webp" alt="Empty kayak">
+            <figcaption>Gear</figcaption>
             </figure>
             <figure>
-            <img src="images/raft-wave.jpg" alt="Wave Hitting a Raft">
-            <figcaption>Chop Block</figcaption>
+            <img src="images/trail.webp" alt="Trail">
+            <figcaption>Planning Assistance</figcaption>
             </figure>
             <figure>
-            <img src="images/bright-chop-rafts.jpg" alt="Rafts on Bright Choppy Waves">
-            <figcaption>The Ocean</figcaption>
+            <img src="images/happy-rafting-guide2.jpg" alt="Happy Rafting Guide">
+            <figcaption>Guides</figcaption>
             </figure>
             <figure>
-            <img src="images/celebrating-raft-group.webp" alt="Celebrating Raft Group">
-            <figcaption>The Bear</figcaption>
+            <img src="images/directions.webp" alt="Sign post">
+            <figcaption>Area Info</figcaption>
             </figure>
         </section>
         <!-- grid with 2 images and purpose and offerings content -->
-        <!-- rafting, camping -->
-        <section>
-            <h2>Plan a trip now!</h2>
-            <img>
+        <section id="plan">
+            <h2>Find a trip by visiting our trip page!</h2>
+            <div id="collage">
+                <img src="images/trail.webp" alt="Trail" id="plan">
+                <img src="images/raft-calm-spot.jpg" alt="Camping" id="plan">
+                <img src="images/camping2.jpg" alt="Camping" id="plan">
+                <img src="images/raft-above-cliff.webp" alt="Rafting" id="plan">
+            </div>
+            <a href="trips.html">Plan a trip now!</a>
         </section>
         <!-- Call to action with link to trips.html, compels to trip page -->
-        <form>
-
+        <form id="newsletter">
+            <p class="title">Sign up to get the latest news!</p>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column1">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-item column1">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Newsletter Frequency</legend>
+                <div class="form-item column4">
+                    <p class="radio">I would like to receive emails:</p>
+                    
+                    <input type="radio" id="weekly" name="newsletter" value="weekly">
+                    <label for="weekly">Weekly</label>
+                    
+                    <input type="radio" id="monthly" name="newsletter" value="monthly">
+                    <label for="monthly">Monthly</label>
+                    
+                    <input type="radio" id="yearly" name="newsletter" value="yearly">
+                    <label for="yearly">Yearly</label>
+                    
+                    <input type="radio" id="new-adventure" name="newsletter" value="new-adventure">
+                    <label for="new-adventure">For new adventures</label>
+                </div>
+            </fieldset>
+            <button type="submit">Send me newsletters!</button>
         </form>
         <!-- newsletter signup with name, email, and frequency -->
     </main>
