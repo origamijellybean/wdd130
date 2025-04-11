@@ -283,12 +283,12 @@ section.middle {
     text-align: center;
 }
 
-#plan {
-    width: 100%;
-}
-
 .plan {
     text-align: center;
+}
+
+img.plan {
+    width: 100%;
 }
 
 #collage {
