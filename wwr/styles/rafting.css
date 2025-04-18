@@ -562,24 +562,23 @@ iframe {
 
 .popular-trips {
     display: grid;
-    /* grid-template-columns: repeat(12, 100%); */
-    grid-template-columns: repeat(4, 100%);
     grid-template-rows: 400px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     min-width: 600px;
 }
-/* #slide-one img{
-    grid-column: span 3;
-}
-#slide-two img {
-    grid-column: span 4;
-}
 
-#slide-three img {
-    grid-column: span 4;
-} */
+
+#slide-one {
+    grid-template-columns: repeat(4, 100%);
+}
+#slide-two {
+    grid-template-columns: repeat(3, 100%);
+}
+#slide-three {
+    grid-template-columns: repeat(3, 100%);
+}
 
 .popular-trips img {
     scroll-snap-align: center;
